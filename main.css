@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  margin-bottom: 10px;
+}
+
+.numberTest {
+  margin-top: 10px;
+  width: 250px;
+}
+
+.test {
+  margin-top: 10px;
+  width: 70px;
+  background-color: aqua;
+  color: white;
+  border-radius: 5px;
+}
+
+.clue {
+  margin-top: 10px;
+  width: 350px;
+}
+
+.try {
+  margin-top: 10px;
+  width: 350px;
+}
