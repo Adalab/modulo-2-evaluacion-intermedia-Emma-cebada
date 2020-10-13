@@ -6,9 +6,8 @@ const clue = document.querySelector(".js-clue");
 const tries = document.querySelector(".js-tries");
 
 //Para que se produzca el número aleatorio.
-const getRandom = function () {
-  const random = parseInt(Math.random() * 100);
-  return random;
+const getRandom = function getRandomNumber(max) {
+  return Math.ceil(Math.random() * max);
 };
 function toClick() {
   const value = numberTest.value;
@@ -28,7 +27,7 @@ function toClick() {
   }
 }
 
-button.addEventListener("click", toclick);
+button.addEventListener("click", toClick);
  
 
 //Para que recoja el número que introduce la usuaria.
