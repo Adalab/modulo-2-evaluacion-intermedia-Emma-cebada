@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  padding: 10px;
 }
 
 .form {
@@ -31,7 +31,7 @@
   width: 350px;
 }
 
-.try {
+.tries {
   margin-top: 10px;
   width: 350px;
 }
