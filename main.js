@@ -14,6 +14,7 @@ const getRandom = getRandomNumber(100);
 console.log(getRandom);
 
 function toClick() {
+  manyTimes();
   let inputValue = parseInt(numberTest.value);
   if (inputValue < getRandom) {
     clue.innerHTML = "Demasiado bajo.";
@@ -26,16 +27,19 @@ function toClick() {
   } else if (inputValue < 1) {
     clue.innerHTML = "El número debe estar entre 1 y 100.";
   }
-  manyTimes();
-  tries.innerHTML += `Número de intentos: ${manyTimes}`;
 }
 
 //Para que recoja el número que introduce la usuaria.
 
 let manyclicks = 0;
 function manyTimes() {
-  manyclicks++;
-  return manyclicks;
+  if (clue.innerHTML === "Has ganado campeona!!!") {
+    manyclicks += 0;
+    tries.innerHTML = `Número de intentos: ${manyclicks}`;
+  } else {
+    manyclicks += 1;
+    tries.innerHTML = `Número de intentos: ${manyclicks}`;
+  }
 }
 
 button.addEventListener("click", toClick);
